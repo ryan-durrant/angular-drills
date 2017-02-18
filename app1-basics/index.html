@@ -1,6 +1,18 @@
-<html>
-	<body>
-	
+<!DOCTYPE html>
+<html ng-app="app1">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body ng-controller="mainCtrl">
+		<h1>App Numero 1</h1>
+		<div>
+			<p>{{yo}}</p>
+
+			<input type="text" name="" value="" ng-model="input">
+		</div>
+		<h3>{{input}}</h3>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

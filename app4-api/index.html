@@ -1,6 +1,16 @@
 <html ng-app="apiApp">
-	<body>
-		
+	<body ng-controller="mainCtrl">
+		<h1>Star Wars</h1>
+		<div class="container">
+			<p ng-repeat="person in data">
+				<span>Name: {{person.name}}</span></br>
+				<span>Heigh: {{person.height}}</span></br>
+				<span>Mass: {{person.mass}}</span></br>
+				<span>Hair Color: {{person.hair_color}}</span></br>
+				<span>Gender: {{person.gender}}</span></br>
+				<span>Homeworld: {{person.homeworld}}</span>
+			</p>
+		</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
